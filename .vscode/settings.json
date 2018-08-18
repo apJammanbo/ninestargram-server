@@ -1,0 +1,6 @@
+{
+  "python.formatting.provider": "none",
+  "python.linting.enabled": false,
+  "editor.formatOnSave": true,
+  "python.pythonPath": "/Users/changmin/.local/share/virtualenvs/ninestargram_server-GXWVsHKu/bin/python",
+}
