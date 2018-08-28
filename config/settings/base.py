@@ -69,6 +69,7 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "rest_framework",
+    "taggit",
 ]
 LOCAL_APPS = [
     "ninestargram_server.users.apps.UsersAppConfig",
@@ -224,3 +225,4 @@ SOCIALACCOUNT_ADAPTER = "ninestargram_server.users.adapters.SocialAccountAdapter
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+TAGGIT_CASE_INSENSITIVE = True

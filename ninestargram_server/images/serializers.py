@@ -3,6 +3,12 @@ from . import models
 from ninestargram_server.users import models as user_model
 
 
+class CountImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Image
+        fields = ("id", "file", "comment_count", "like_count")
+
+
 class FeedUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = user_model.User
@@ -10,7 +16,7 @@ class FeedUserSerializer(serializers.ModelSerializer):
 
 
 class CommentSerializer(serializers.ModelSerializer):
-    creator = FeedUserSerializer()
+    creator = FeedUserSerializer(read_only=True)
 
     class Meta:
         model = models.Comment
