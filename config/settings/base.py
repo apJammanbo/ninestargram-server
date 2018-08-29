@@ -75,6 +75,7 @@ LOCAL_APPS = [
     "ninestargram_server.users.apps.UsersAppConfig",
     # Your stuff: custom apps go here
     "ninestargram_server.images.apps.ImagesConfig",
+    "ninestargram_server.notifications.apps.NotificationsConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

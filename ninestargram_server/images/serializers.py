@@ -3,6 +3,14 @@ from . import models
 from ninestargram_server.users import models as user_model
 
 
+class SmallImageSerializer(serializers.ModelSerializer):
+    """ Used for Notification """
+
+    class Meta:
+        model = models.Image
+        fields = ("file",)
+
+
 class CountImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Image
@@ -44,4 +52,5 @@ class ImageSerializer(serializers.ModelSerializer):
             "comments",
             "like_count",
             "creator",
+            "created_at",
         )

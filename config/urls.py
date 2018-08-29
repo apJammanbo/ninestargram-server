@@ -15,6 +15,10 @@ urlpatterns = [
     # User management
     path("users/", include("ninestargram_server.users.urls", namespace="users")),
     path("images/", include("ninestargram_server.images.urls", namespace="images")),
+    path(
+        "notifications/",
+        include("ninestargram_server.notifications.urls", namespace="notifications"),
+    ),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
