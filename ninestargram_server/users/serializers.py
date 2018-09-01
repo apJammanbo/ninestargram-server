@@ -4,7 +4,10 @@ from ninestargram_server.images import serializers as images_serializers
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    images = images_serializers.CountImageSerializer(many=True)
+    images = images_serializers.CountImageSerializer(many=True, read_only=True)
+    post_count = serializers.ReadOnlyField()
+    followers_count = serializers.ReadOnlyField()
+    following_count = serializers.ReadOnlyField()
 
     class Meta:
         model = models.User
@@ -17,6 +20,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
             "followers_count",
             "following_count",
             "images",
+            "profile_image",
         )
 
 
