@@ -1,6 +1,17 @@
 {
   "python.formatting.provider": "none",
   "python.linting.enabled": false,
-  "editor.formatOnSave": true,
   "python.pythonPath": "/Users/changmin/.local/share/virtualenvs/ninestargram_server-GXWVsHKu/bin/python",
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "tslint.autoFixOnSave": false,
+  "eslint.autoFixOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
 }
