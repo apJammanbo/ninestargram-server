@@ -23,6 +23,7 @@ class UserAdmin(auth_admin.UserAdmin):
                     "profile_image",
                     "bio",
                     "website",
+                    "gender",
                 )
             },
         ),
