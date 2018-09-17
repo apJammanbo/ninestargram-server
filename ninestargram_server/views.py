@@ -5,8 +5,6 @@ import os
 
 
 class ReactAppView(View):
-    print("11")
-
     def get(self, request):
         try:
             with open(
